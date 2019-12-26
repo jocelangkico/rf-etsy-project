@@ -1,5 +1,5 @@
 *** Settings ***
-Suite Setup     Open Website As Guest  ${WebsiteURL}   ${Chrome}
+Suite Setup     Open Website As Guest  ${WebsiteURL}   ${BROWSER}
 Suite Teardown  Close Browser
 Documentation   Search products on the site as guest
 Resource        SearchKeywords.robot
