@@ -6,6 +6,7 @@ Resource        SearchKeywords.robot
 
 *** Test Cases ***
 Search For Products
+    [Tags]  Search
     [Setup]  Navigate To  ${websiteURL}
     Input Text   ${SearchInputField}    ${SearchTermLeather}
     Press Keys  ${SearchInputField}  ${EnterKey}
@@ -13,6 +14,7 @@ Search For Products
     Verify Element Contains Text  ${Search_ListingCard}  ${SearchTermLeather}
 
 Sort Search Result By Relevancy
+    [Tags]  Search
     [Setup]  Navigate To  ${websiteURL}
     Input Text   ${SearchInputField}    ${SearchTermLeather}
     Press Keys  ${SearchInputField}  ${EnterKey}
